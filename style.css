@@ -1,0 +1,12 @@
+body{
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    color: white;
+    text-align: center;
+    background: brown;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 50px 50px;
+}
