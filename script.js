@@ -10,4 +10,13 @@ get_meal.addEventListener('click', () => {
 const createMeal = (meal) => {
     const ingredients = [];
 
+    for(let i=1; i<=20; i++) {
+        if (meal['strIngredient'+i]) {
+            ingredients.push({measure: meal['strMeasure'+i], ingredient: meal['strIngredient'+i]});
+        }
+        else { break; }
+    }
+
+    
+    
 }
