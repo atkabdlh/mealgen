@@ -17,6 +17,32 @@ const createMeal = (meal) => {
         else { break; }
     }
 
-    
+    const new_recipe = `
+        <br>
+        <div id="title">${meal.strMeal}</div>
+        <div id="image">
+            <img src="${meal.strMealThumb}">
+        </div>
+        <div id="ingredients">
+            Ingredients:
+            <ul>
+                ${ingredients.map(ingredient =>`<li>${ingredient.measure} `+ ' ' +` ${ingredient.ingredient}`).join('')}
+            </ul>
+        </div>
+        <br>
+        <div id="instructions">
+            Instructions:
+            <p>
+                ${meal.strInstructions}
+            </p>
+        </div>
+        <div id="video">
+            <iframe width="420" height="315"
+            src="https://www.youtube.com/embed/${meal.strYoutube.slice(-11)}">
+            </iframe>
+        </div>
+    `;
+
+    recipe.innerHTML = new_recipe;
     
 }
