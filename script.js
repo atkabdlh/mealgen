@@ -1,5 +1,5 @@
 const get_meal =  document.getElementById('get_meal');
-const meal_cont = document.getElementById('meal');
+const recipe_cont = document.getElementById('recipe');
 
 get_meal.addEventListener('click', () => {
     fetch('https://www.themealdb.com/api/json/v1/1/random.php')
@@ -43,6 +43,6 @@ const createMeal = (meal) => {
         </div>
     `;
 
-    recipe.innerHTML = new_recipe;
+    recipe_cont.innerHTML = new_recipe;
     
 }

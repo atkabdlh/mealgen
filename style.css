@@ -22,7 +22,7 @@ img{
     display: grid;
     grid-template-columns: repeat(3, 3fr);
     grid-template-rows: repeat(2, 50px);
-    grid-gap: 50px;
+    grid-gap: 20px;
 }
 
 #title{
